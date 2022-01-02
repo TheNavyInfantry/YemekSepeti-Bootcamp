@@ -44,8 +44,8 @@ class FileToolClass(object):
             reader = csv.reader(csv_file)
             for row, search in enumerate(reader):
                 for each in search:
-                    if to_find in each.lstrip():
-                        match_list.append(f"Your query was found on row {row} : (as) {each.lstrip()}")
+                    if to_find in each.strip():
+                        match_list.append(f"Your query was found on row {row} : (as) {each.strip()}")
             print(*match_list, sep='\n')
 
     def delete_in_file(self, row_to_delete):
@@ -63,7 +63,7 @@ class FileToolClass(object):
 
         print(f"Row {row_to_delete} is deleted from your file")
 
-    def append_on_file(self,*value_to_append):
+    def append_in_file(self,*value_to_append):
         to_append = []
         to_append.append(value_to_append)
 
@@ -214,7 +214,14 @@ def menu():
             obj.search_in_file(user_input)
 
         elif choice == 4:
-            pass
+            added = []
+            while True:
+                if len(added) == obj.get_header():
+                    break
+                add_data = input("Data to add: ")
+                added.append(add_data)
+
+            obj.append_in_file(*added)
 
 
         elif choice == 5:
