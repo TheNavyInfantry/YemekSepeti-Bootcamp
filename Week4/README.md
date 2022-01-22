@@ -1,5 +1,22 @@
 # pythonfiletool_regex_json
 
+#### 1. How To Run
+
+* Clone this repository.
+
+```bash
+$ git clone --recursive https://github.com/Yemeksepeti-Python-Bootcamp/python_filetool_regex_json-TheNavyInfantry.git
+
+$ cd python_filetool_regex_json-TheNavyInfantry
+```
+
+* Open a terminal in the project root directory and run:
+```bash
+python3 main.py --file "dataregex.json" --db "dataregex.db"
+```
+---
+#### 2. Project Description in Turkish
+
 Bu repository patika.dev 153. Yemeksepeti Python Web Development Bootcamp için ödev detaylarını paylaşmak üzere tema olarak hazırlanmıştır. 
 
 Repository içerisinde yer alan `dataregex.json` dosyada yer alan kayıtların incelenerek aşağıdaki kriterlere uygun olarak bir veritabanına kaydedilmesi beklenmektedir. 
@@ -27,4 +44,5 @@ Kriterler
 3. Kod çalıştırıldığında aynı formatta ki farklı veriler veritabanına yeni bir tablo olarak kaydediliyor mu?
 4. Program OOP paradigmasına uygun yazılmış mı?
 5. main.py dosyası parametrelerle sağlıklı çalışıyor mu? parametre girilmediğinde bilgi vererek kullanıcıyı yönlendiriyor mu?
-  
+
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg)](https://classroom.github.com/online_ide?assignment_repo_id=6739025&assignment_repo_type=AssignmentRepo)
